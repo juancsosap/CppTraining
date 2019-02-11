@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.cnd.makeproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/make-project/1">
+            <name>CppTraining</name>
+            <c-extensions/>
+            <cpp-extensions>cpp</cpp-extensions>
+            <header-extensions/>
+            <sourceEncoding>UTF-8</sourceEncoding>
+            <make-dep-projects/>
+            <sourceRootList>
+                <sourceRootElem>C01_Console</sourceRootElem>
+                <sourceRootElem>C02_Variables</sourceRootElem>
+                <sourceRootElem>C03_Operators</sourceRootElem>
+                <sourceRootElem>C04_ControBlocks</sourceRootElem>
+                <sourceRootElem>C05_LoopBlocks</sourceRootElem>
+                <sourceRootElem>C06_Arrays</sourceRootElem>
+                <sourceRootElem>C07_Functions</sourceRootElem>
+                <sourceRootElem>C08_Objects</sourceRootElem>
+                <sourceRootElem>C09_Exceptions</sourceRootElem>
+                <sourceRootElem>C10_IOStreams</sourceRootElem>
+                <sourceRootElem>C11_Preprocessors</sourceRootElem>
+                <sourceRootElem>C12_Generics</sourceRootElem>
+                <sourceRootElem>C13_Namespaces</sourceRootElem>
+                <sourceRootElem>C08_Structures</sourceRootElem>
+                <sourceRootElem>C09_Objects</sourceRootElem>
+                <sourceRootElem>C10_Exceptions</sourceRootElem>
+                <sourceRootElem>C14_IOStreams</sourceRootElem>
+            </sourceRootList>
+            <confList>
+                <confElem>
+                    <name>Debug</name>
+                    <type>1</type>
+                </confElem>
+                <confElem>
+                    <name>Release</name>
+                    <type>1</type>
+                </confElem>
+            </confList>
+            <formatting>
+                <project-formatting-style>false</project-formatting-style>
+            </formatting>
+        </data>
+    </configuration>
+</project>
