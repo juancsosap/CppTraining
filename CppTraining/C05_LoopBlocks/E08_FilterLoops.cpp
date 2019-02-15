@@ -3,21 +3,24 @@
 
 using namespace std;
 
-void app0508() {
-    cout << "  Filter Even Numbers " << endl;
-    cout << "----------------------" << endl;
-    
-    for(int i = 1; i <= 10; i++) {
-        if(i % 2 == 0) {
-            continue;
+class App0508 {
+public:
+    static void run() {
+        cout << "  Filter Even Numbers " << endl;
+        cout << "----------------------" << endl;
+
+        for(int i = 1; i <= 10; i++) {
+            if(i % 2 == 0) {
+                continue;
+            }
+            cout << i << endl;
         }
-        cout << i << endl;
     }
-}
+};
 
 /*
 int main(int argc, char** argv) {
-    app0508();
+    App0508::run();
     return 0;
 }
 */

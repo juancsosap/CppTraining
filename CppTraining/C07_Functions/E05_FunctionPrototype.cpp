@@ -28,26 +28,29 @@ void changeOdd(int num, int max) {
     }    
 }
 
-int request(string message) {
-    int number;
-    do {
-        cout << message;
-        cin >> number;
-    } while(number < 0);
-    return number;
-}
+class App0705 {
+public:
+    static int requestInt(string message) {
+        int number;
+        do {
+            cout << message;
+            cin >> number;
+        } while(number < 0);
+        return number;
+    }
 
-void app0705() {
-    cout << "   Irregular Increment   " << endl;
-    
-    int max = request("Number     : ");
-    
-    changeEven(0, max);
-}
+    static void run() {
+        cout << "   Irregular Increment   " << endl;
+
+        int max = requestInt("Number     : ");
+
+        changeEven(0, max);
+    }
+};
 
 /*
 int main(int argc, char** argv) {
-    app0705();
+    App0705::run();
     return 0;
 }
 */

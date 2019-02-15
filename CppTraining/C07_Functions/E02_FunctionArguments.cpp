@@ -3,22 +3,25 @@
 
 using namespace std;
 
-void printLine(int length) {
-    for(int i = 0; i < length; i++) {
-        cout << "-";
+class App0702 {
+public:
+    static void printLine(int length) {
+        for(int i = 0; i < length; i++) {
+            cout << "-";
+        }
+        cout << endl;
     }
-    cout << endl;
-}
 
-void app0702() {
-    for(int i = 1; i < 10; i++) {
-        printLine(i);
+    static void run() {
+        for(int i = 1; i < 10; i++) {
+            printLine(i);
+        }
     }
-}
+};
 
 /*
 int main(int argc, char** argv) {
-    app0702();
+    App0702::run();
     return 0;
 }
 */

@@ -31,6 +31,8 @@
         <itemPath>C02_Variables/E07_Constants.cpp</itemPath>
         <itemPath>C02_Variables/E08_SizeOf.cpp</itemPath>
         <itemPath>C02_Variables/E09_HeapMemoryManage.cpp</itemPath>
+        <itemPath>C02_Variables/E10_Strings.cpp</itemPath>
+        <itemPath>C02_Variables/E11_StringMethods.cpp</itemPath>
       </logicalFolder>
       <logicalFolder name="C03_Operators"
                      displayName="C03_Operators"
@@ -88,6 +90,9 @@
         <itemPath>C07_Functions/E10_PassParametersByReference.cpp</itemPath>
         <itemPath>C07_Functions/E11_PassArrayProtected.cpp</itemPath>
         <itemPath>C07_Functions/E12_RangePointers.cpp</itemPath>
+        <itemPath>C07_Functions/E13_RecursiveFunctions.cpp</itemPath>
+        <itemPath>C07_Functions/E14_FunctionOverloading.cpp</itemPath>
+        <itemPath>C07_Functions/E15_StaticVariables.cpp</itemPath>
       </logicalFolder>
       <logicalFolder name="C08_Structures"
                      displayName="C08_Structures"
@@ -99,27 +104,23 @@
         <itemPath>C08_Structures/E05_Unions.cpp</itemPath>
       </logicalFolder>
       <logicalFolder name="C09_Objects" displayName="C09_Objects" projectFiles="true">
+        <itemPath>C09_Objects/E01_ClassDefinition.cpp</itemPath>
+        <itemPath>C09_Objects/E02_AccessModifiers.cpp</itemPath>
+        <itemPath>C09_Objects/E03_ObjectsInMemory.cpp</itemPath>
+        <itemPath>C09_Objects/E04_ScopeResolutionOperator.cpp</itemPath>
+        <itemPath>C09_Objects/E05_ObjectsConstructors.cpp</itemPath>
+        <itemPath>C09_Objects/E06_DefaultContructors.cpp</itemPath>
+        <itemPath>C09_Objects/E07_ConstructorOverloading.cpp</itemPath>
+        <itemPath>C09_Objects/E08_CopyConstructor.cpp</itemPath>
+        <itemPath>C09_Objects/E09_ObjectsDistructors.cpp</itemPath>
+        <itemPath>C09_Objects/E10_StaticClassFields.cpp</itemPath>
+        <itemPath>C09_Objects/E11_StaticClassMethods.cpp</itemPath>
+        <itemPath>C09_Objects/E12_FriendFunction.cpp</itemPath>
+        <itemPath>C09_Objects/E13_FriendClass.cpp</itemPath>
+        <itemPath>C09_Objects/E14_Inheritance.cpp</itemPath>
+        <itemPath>C09_Objects/E15_InheritanceAccess.cpp</itemPath>
       </logicalFolder>
-      <logicalFolder name="C10_Exceptions"
-                     displayName="C10_Exceptions"
-                     projectFiles="true">
-      </logicalFolder>
-      <logicalFolder name="C11_Preprocessors"
-                     displayName="C11_Preprocessors"
-                     projectFiles="true">
-      </logicalFolder>
-      <logicalFolder name="C12_Generics"
-                     displayName="C12_Generics"
-                     projectFiles="true">
-      </logicalFolder>
-      <logicalFolder name="C13_Namespaces"
-                     displayName="C13_Namespaces"
-                     projectFiles="true">
-      </logicalFolder>
-      <logicalFolder name="C14_IOStreams"
-                     displayName="C14_IOStreams"
-                     projectFiles="true">
-      </logicalFolder>
+      <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -141,15 +142,12 @@
     <Elem>C05_LoopBlocks</Elem>
     <Elem>C06_Arrays</Elem>
     <Elem>C07_Functions</Elem>
-    <Elem>C08_Objects</Elem>
-    <Elem>C09_Exceptions</Elem>
-    <Elem>C10_IOStreams</Elem>
-    <Elem>C11_Preprocessors</Elem>
-    <Elem>C12_Generics</Elem>
-    <Elem>C13_Namespaces</Elem>
     <Elem>C08_Structures</Elem>
     <Elem>C09_Objects</Elem>
     <Elem>C10_Exceptions</Elem>
+    <Elem>C11_Preprocessors</Elem>
+    <Elem>C12_Generics</Elem>
+    <Elem>C13_Namespaces</Elem>
     <Elem>C14_IOStreams</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
@@ -213,6 +211,13 @@
       <item path="C02_Variables/E08_SizeOf.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="C02_Variables/E09_HeapMemoryManage.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C02_Variables/E10_Strings.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C02_Variables/E11_StringMethods.cpp"
             ex="false"
             tool="1"
             flavor2="0">
@@ -364,6 +369,21 @@
             tool="1"
             flavor2="0">
       </item>
+      <item path="C07_Functions/E13_RecursiveFunctions.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C07_Functions/E14_FunctionOverloading.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C07_Functions/E15_StaticVariables.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
       <item path="C08_Structures/E01_BasicStructure.cpp"
             ex="false"
             tool="1"
@@ -385,6 +405,74 @@
             flavor2="0">
       </item>
       <item path="C08_Structures/E05_Unions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C09_Objects/E01_ClassDefinition.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E02_AccessModifiers.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E03_ObjectsInMemory.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E04_ScopeResolutionOperator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E05_ObjectsConstructors.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E06_DefaultContructors.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E07_ConstructorOverloading.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E08_CopyConstructor.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E09_ObjectsDistructors.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E10_StaticClassFields.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E11_StaticClassMethods.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E12_FriendFunction.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C09_Objects/E13_FriendClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C09_Objects/E14_Inheritance.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C09_Objects/E15_InheritanceAccess.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -462,6 +550,13 @@
             tool="1"
             flavor2="0">
       </item>
+      <item path="C02_Variables/E10_Strings.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C02_Variables/E11_StringMethods.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
       <item path="C03_Operators/E01_Arithmetics.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="C03_Operators/E02_IncDec.cpp" ex="false" tool="1" flavor2="0">
@@ -609,6 +704,21 @@
             tool="1"
             flavor2="0">
       </item>
+      <item path="C07_Functions/E13_RecursiveFunctions.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C07_Functions/E14_FunctionOverloading.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C07_Functions/E15_StaticVariables.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
       <item path="C08_Structures/E01_BasicStructure.cpp"
             ex="false"
             tool="1"
@@ -630,6 +740,74 @@
             flavor2="0">
       </item>
       <item path="C08_Structures/E05_Unions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C09_Objects/E01_ClassDefinition.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E02_AccessModifiers.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E03_ObjectsInMemory.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E04_ScopeResolutionOperator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E05_ObjectsConstructors.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E06_DefaultContructors.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E07_ConstructorOverloading.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E08_CopyConstructor.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E09_ObjectsDistructors.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E10_StaticClassFields.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E11_StaticClassMethods.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E12_FriendFunction.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C09_Objects/E13_FriendClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C09_Objects/E14_Inheritance.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C09_Objects/E15_InheritanceAccess.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>

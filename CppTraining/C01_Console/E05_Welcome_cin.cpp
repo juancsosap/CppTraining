@@ -4,19 +4,22 @@
 
 using namespace std;
 
-void app0105() {
-    cout << "What is your name" << endl;
-    
-    string name;
-    // >> String input operator
-    cin >> name;
-    
-    cout << "Welcome " << name << endl;
-}
+class App0105 {
+public:
+    static void run() {
+        cout << "What is your name" << endl;
+
+        string name;
+        // >> String input operator
+        cin >> name;
+
+        cout << "Welcome " << name << endl;
+    }
+};
 
 /*
 int main(int argc, char** argv) {
-    app0105();
+    App0105::run();
     return 0;
 }
 */

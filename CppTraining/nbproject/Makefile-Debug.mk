@@ -49,6 +49,8 @@ OBJECTFILES= \
 	${OBJECTDIR}/C02_Variables/E07_Constants.o \
 	${OBJECTDIR}/C02_Variables/E08_SizeOf.o \
 	${OBJECTDIR}/C02_Variables/E09_HeapMemoryManage.o \
+	${OBJECTDIR}/C02_Variables/E10_Strings.o \
+	${OBJECTDIR}/C02_Variables/E11_StringMethods.o \
 	${OBJECTDIR}/C03_Operators/E01_Arithmetics.o \
 	${OBJECTDIR}/C03_Operators/E02_IncDec.o \
 	${OBJECTDIR}/C03_Operators/E03_ShortHand.o \
@@ -88,11 +90,30 @@ OBJECTFILES= \
 	${OBJECTDIR}/C07_Functions/E10_PassParametersByReference.o \
 	${OBJECTDIR}/C07_Functions/E11_PassArrayProtected.o \
 	${OBJECTDIR}/C07_Functions/E12_RangePointers.o \
+	${OBJECTDIR}/C07_Functions/E13_RecursiveFunctions.o \
+	${OBJECTDIR}/C07_Functions/E14_FunctionOverloading.o \
+	${OBJECTDIR}/C07_Functions/E15_StaticVariables.o \
 	${OBJECTDIR}/C08_Structures/E01_BasicStructure.o \
 	${OBJECTDIR}/C08_Structures/E02_StructurePointer.o \
 	${OBJECTDIR}/C08_Structures/E03_NestedStructure.o \
 	${OBJECTDIR}/C08_Structures/E04_StructureSize.o \
-	${OBJECTDIR}/C08_Structures/E05_Unions.o
+	${OBJECTDIR}/C08_Structures/E05_Unions.o \
+	${OBJECTDIR}/C09_Objects/E01_ClassDefinition.o \
+	${OBJECTDIR}/C09_Objects/E02_AccessModifiers.o \
+	${OBJECTDIR}/C09_Objects/E03_ObjectsInMemory.o \
+	${OBJECTDIR}/C09_Objects/E04_ScopeResolutionOperator.o \
+	${OBJECTDIR}/C09_Objects/E05_ObjectsConstructors.o \
+	${OBJECTDIR}/C09_Objects/E06_DefaultContructors.o \
+	${OBJECTDIR}/C09_Objects/E07_ConstructorOverloading.o \
+	${OBJECTDIR}/C09_Objects/E08_CopyConstructor.o \
+	${OBJECTDIR}/C09_Objects/E09_ObjectsDistructors.o \
+	${OBJECTDIR}/C09_Objects/E10_StaticClassFields.o \
+	${OBJECTDIR}/C09_Objects/E11_StaticClassMethods.o \
+	${OBJECTDIR}/C09_Objects/E12_FriendFunction.o \
+	${OBJECTDIR}/C09_Objects/E13_FriendClass.o \
+	${OBJECTDIR}/C09_Objects/E14_Inheritance.o \
+	${OBJECTDIR}/C09_Objects/E15_InheritanceAccess.o \
+	${OBJECTDIR}/main.o
 
 
 # C Compiler Flags
@@ -188,6 +209,16 @@ ${OBJECTDIR}/C02_Variables/E09_HeapMemoryManage.o: C02_Variables/E09_HeapMemoryM
 	${MKDIR} -p ${OBJECTDIR}/C02_Variables
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C02_Variables/E09_HeapMemoryManage.o C02_Variables/E09_HeapMemoryManage.cpp
+
+${OBJECTDIR}/C02_Variables/E10_Strings.o: C02_Variables/E10_Strings.cpp
+	${MKDIR} -p ${OBJECTDIR}/C02_Variables
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C02_Variables/E10_Strings.o C02_Variables/E10_Strings.cpp
+
+${OBJECTDIR}/C02_Variables/E11_StringMethods.o: C02_Variables/E11_StringMethods.cpp
+	${MKDIR} -p ${OBJECTDIR}/C02_Variables
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C02_Variables/E11_StringMethods.o C02_Variables/E11_StringMethods.cpp
 
 ${OBJECTDIR}/C03_Operators/E01_Arithmetics.o: C03_Operators/E01_Arithmetics.cpp
 	${MKDIR} -p ${OBJECTDIR}/C03_Operators
@@ -384,6 +415,21 @@ ${OBJECTDIR}/C07_Functions/E12_RangePointers.o: C07_Functions/E12_RangePointers.
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C07_Functions/E12_RangePointers.o C07_Functions/E12_RangePointers.cpp
 
+${OBJECTDIR}/C07_Functions/E13_RecursiveFunctions.o: C07_Functions/E13_RecursiveFunctions.cpp
+	${MKDIR} -p ${OBJECTDIR}/C07_Functions
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C07_Functions/E13_RecursiveFunctions.o C07_Functions/E13_RecursiveFunctions.cpp
+
+${OBJECTDIR}/C07_Functions/E14_FunctionOverloading.o: C07_Functions/E14_FunctionOverloading.cpp
+	${MKDIR} -p ${OBJECTDIR}/C07_Functions
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C07_Functions/E14_FunctionOverloading.o C07_Functions/E14_FunctionOverloading.cpp
+
+${OBJECTDIR}/C07_Functions/E15_StaticVariables.o: C07_Functions/E15_StaticVariables.cpp
+	${MKDIR} -p ${OBJECTDIR}/C07_Functions
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C07_Functions/E15_StaticVariables.o C07_Functions/E15_StaticVariables.cpp
+
 ${OBJECTDIR}/C08_Structures/E01_BasicStructure.o: C08_Structures/E01_BasicStructure.cpp
 	${MKDIR} -p ${OBJECTDIR}/C08_Structures
 	${RM} "$@.d"
@@ -408,6 +454,86 @@ ${OBJECTDIR}/C08_Structures/E05_Unions.o: C08_Structures/E05_Unions.cpp
 	${MKDIR} -p ${OBJECTDIR}/C08_Structures
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C08_Structures/E05_Unions.o C08_Structures/E05_Unions.cpp
+
+${OBJECTDIR}/C09_Objects/E01_ClassDefinition.o: C09_Objects/E01_ClassDefinition.cpp
+	${MKDIR} -p ${OBJECTDIR}/C09_Objects
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E01_ClassDefinition.o C09_Objects/E01_ClassDefinition.cpp
+
+${OBJECTDIR}/C09_Objects/E02_AccessModifiers.o: C09_Objects/E02_AccessModifiers.cpp
+	${MKDIR} -p ${OBJECTDIR}/C09_Objects
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E02_AccessModifiers.o C09_Objects/E02_AccessModifiers.cpp
+
+${OBJECTDIR}/C09_Objects/E03_ObjectsInMemory.o: C09_Objects/E03_ObjectsInMemory.cpp
+	${MKDIR} -p ${OBJECTDIR}/C09_Objects
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E03_ObjectsInMemory.o C09_Objects/E03_ObjectsInMemory.cpp
+
+${OBJECTDIR}/C09_Objects/E04_ScopeResolutionOperator.o: C09_Objects/E04_ScopeResolutionOperator.cpp
+	${MKDIR} -p ${OBJECTDIR}/C09_Objects
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E04_ScopeResolutionOperator.o C09_Objects/E04_ScopeResolutionOperator.cpp
+
+${OBJECTDIR}/C09_Objects/E05_ObjectsConstructors.o: C09_Objects/E05_ObjectsConstructors.cpp
+	${MKDIR} -p ${OBJECTDIR}/C09_Objects
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E05_ObjectsConstructors.o C09_Objects/E05_ObjectsConstructors.cpp
+
+${OBJECTDIR}/C09_Objects/E06_DefaultContructors.o: C09_Objects/E06_DefaultContructors.cpp
+	${MKDIR} -p ${OBJECTDIR}/C09_Objects
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E06_DefaultContructors.o C09_Objects/E06_DefaultContructors.cpp
+
+${OBJECTDIR}/C09_Objects/E07_ConstructorOverloading.o: C09_Objects/E07_ConstructorOverloading.cpp
+	${MKDIR} -p ${OBJECTDIR}/C09_Objects
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E07_ConstructorOverloading.o C09_Objects/E07_ConstructorOverloading.cpp
+
+${OBJECTDIR}/C09_Objects/E08_CopyConstructor.o: C09_Objects/E08_CopyConstructor.cpp
+	${MKDIR} -p ${OBJECTDIR}/C09_Objects
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E08_CopyConstructor.o C09_Objects/E08_CopyConstructor.cpp
+
+${OBJECTDIR}/C09_Objects/E09_ObjectsDistructors.o: C09_Objects/E09_ObjectsDistructors.cpp
+	${MKDIR} -p ${OBJECTDIR}/C09_Objects
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E09_ObjectsDistructors.o C09_Objects/E09_ObjectsDistructors.cpp
+
+${OBJECTDIR}/C09_Objects/E10_StaticClassFields.o: C09_Objects/E10_StaticClassFields.cpp
+	${MKDIR} -p ${OBJECTDIR}/C09_Objects
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E10_StaticClassFields.o C09_Objects/E10_StaticClassFields.cpp
+
+${OBJECTDIR}/C09_Objects/E11_StaticClassMethods.o: C09_Objects/E11_StaticClassMethods.cpp
+	${MKDIR} -p ${OBJECTDIR}/C09_Objects
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E11_StaticClassMethods.o C09_Objects/E11_StaticClassMethods.cpp
+
+${OBJECTDIR}/C09_Objects/E12_FriendFunction.o: C09_Objects/E12_FriendFunction.cpp
+	${MKDIR} -p ${OBJECTDIR}/C09_Objects
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E12_FriendFunction.o C09_Objects/E12_FriendFunction.cpp
+
+${OBJECTDIR}/C09_Objects/E13_FriendClass.o: C09_Objects/E13_FriendClass.cpp
+	${MKDIR} -p ${OBJECTDIR}/C09_Objects
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E13_FriendClass.o C09_Objects/E13_FriendClass.cpp
+
+${OBJECTDIR}/C09_Objects/E14_Inheritance.o: C09_Objects/E14_Inheritance.cpp
+	${MKDIR} -p ${OBJECTDIR}/C09_Objects
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E14_Inheritance.o C09_Objects/E14_Inheritance.cpp
+
+${OBJECTDIR}/C09_Objects/E15_InheritanceAccess.o: C09_Objects/E15_InheritanceAccess.cpp
+	${MKDIR} -p ${OBJECTDIR}/C09_Objects
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E15_InheritanceAccess.o C09_Objects/E15_InheritanceAccess.cpp
+
+${OBJECTDIR}/main.o: main.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
 
 # Subprojects
 .build-subprojects:

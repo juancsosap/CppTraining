@@ -3,14 +3,17 @@
 
 using namespace std;
 
-void app0101() {
-    // << String output operator
-    cout << "Hello World";
-}
+class App0101 {
+public:
+    static void run() {
+        // << String output operator
+        cout << "Hello World";
+    }
+};
 
 /*
 int main(int argc, char** argv) {
-    app0101();
+    App0101::run();
     return 0;
 }
 */

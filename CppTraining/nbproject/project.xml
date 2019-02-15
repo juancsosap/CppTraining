@@ -17,15 +17,12 @@
                 <sourceRootElem>C05_LoopBlocks</sourceRootElem>
                 <sourceRootElem>C06_Arrays</sourceRootElem>
                 <sourceRootElem>C07_Functions</sourceRootElem>
-                <sourceRootElem>C08_Objects</sourceRootElem>
-                <sourceRootElem>C09_Exceptions</sourceRootElem>
-                <sourceRootElem>C10_IOStreams</sourceRootElem>
-                <sourceRootElem>C11_Preprocessors</sourceRootElem>
-                <sourceRootElem>C12_Generics</sourceRootElem>
-                <sourceRootElem>C13_Namespaces</sourceRootElem>
                 <sourceRootElem>C08_Structures</sourceRootElem>
                 <sourceRootElem>C09_Objects</sourceRootElem>
                 <sourceRootElem>C10_Exceptions</sourceRootElem>
+                <sourceRootElem>C11_Preprocessors</sourceRootElem>
+                <sourceRootElem>C12_Generics</sourceRootElem>
+                <sourceRootElem>C13_Namespaces</sourceRootElem>
                 <sourceRootElem>C14_IOStreams</sourceRootElem>
             </sourceRootList>
             <confList>

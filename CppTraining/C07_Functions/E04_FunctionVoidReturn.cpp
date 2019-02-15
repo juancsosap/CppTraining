@@ -4,58 +4,61 @@
 
 using namespace std;
 
-void authorize(int age) {
-    if(age < 18) {
-        cout << "Restricted access to minors !!!" << endl;
-        return;
+class App0704 {
+public:
+    static void println(string message) {
+        cout << message << endl;
     }
-    cout << "Authorized Access to adults !!!" << endl;
-}
 
-int requestint(string message) {
-    int number;
-    do {
+    static void print(string message) {
         cout << message;
-        cin >> number;
-    } while(number < 0);
-    return number;
-}
+    }
 
-string requeststring(string message) {
-    string word;
-    cout << message;
-    cin >> word;
-    return word;
-}
+    static void printLine() {
+        println("--------------------");
+    }
 
-void println(string message) {
-    cout << message << endl;
-}
+    static int requestInt(string message) {
+        int number;
+        do {
+            print(message);
+            cin >> number;
+        } while(number < 0);
+        return number;
+    }
 
-void print(string message) {
-    cout << message;
-}
+    static string requestString(string message) {
+        string word;
+        print(message);
+        cin >> word;
+        return word;
+    }
 
-void printline() {
-    println("--------------------");
-}
+    static void authorize(int age) {
+        if(age < 18) {
+            println("Restricted access to minors !!!");
+            return;
+        }
+        println("Authorized Access to adults !!!");
+    }
 
-void app0704() {
-    println("   Access Control   ");
-    printline();
-    
-    string firstname = requeststring("Firstname : ");
-    string surname = requeststring("Surname   : ");
-    int age = requestint("Age       : ");
-    
-    printline();
-    
-    authorize(age);
-}
+    static void run() {
+        println("   Access Control   ");
+        printLine();
+
+        string firstname = requestString("Firstname : ");
+        string surname = requestString("Surname   : ");
+        int age = requestInt("Age       : ");
+
+        printLine();
+
+        authorize(age);
+    }
+};
 
 /*
 int main(int argc, char** argv) {
-    app0704();
+    App0704::run();
     return 0;
 }
 */

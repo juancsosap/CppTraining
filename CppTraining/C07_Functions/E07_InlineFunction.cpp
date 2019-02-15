@@ -4,40 +4,41 @@
 
 using namespace std;
 
-// During execution this code could be call
-void printgreeting(string name) {
-    string word = "Hello";
-    cout << word << " " << name << endl;
-}
+class App0707 {
+public:
+    // During execution this code could be call
+    static void printGreeting(string name) {
+        string word = "Hello";
+        cout << word << " " << name << endl;
+    }
 
-// During compilation this code will be place where the function is call
-// No function call occur during execution
-inline void printfarewell(string name) {
-    string word = "Goodbye";
-    cout << word << " " << name << endl;
-}
+    // During compilation this code will be place where the function is call
+    // No function call occur during execution
+    static inline void printFarewell(string name) {
+        string word = "Goodbye";
+        cout << word << " " << name << endl;
+    }
 
-void app0707() {
-    
-    // Function code will be call 4 times
-    // But in the code will exist only one time
-    printgreeting("Carlos");
-    printgreeting("Luis");
-    printgreeting("Pepe");
-    printgreeting("Ana");
-    
-    // Function code will be paste 4 times
-    // Then in the code will exist 4 copies
-    printfarewell("Carlos");
-    printfarewell("Luis");
-    printfarewell("Pepe");
-    printfarewell("Ana");
-    
-}
+    static void run() {
+        // Function code will be call 4 times
+        // But in the code will exist only one time
+        printGreeting("Carlos");
+        printGreeting("Luis");
+        printGreeting("Pepe");
+        printGreeting("Ana");
+
+        // Function code will be paste 4 times
+        // Then in the code will exist 4 copies
+        printFarewell("Carlos");
+        printFarewell("Luis");
+        printFarewell("Pepe");
+        printFarewell("Ana");
+    }
+};
 
 /*
 int main(int argc, char** argv) {
-    app0707();
+    App0707::run();
     return 0;
 }
 */

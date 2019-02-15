@@ -13,19 +13,22 @@ double double_var;
 char char_var;
 bool bool_var;
 
-void app0205() {
-    cout << "short   " << short_var << endl;
-    cout << "int     " << int_var << endl;
-    cout << "long    " << long_var << endl;
-    cout << "float   " << float_var << endl;
-    cout << "double  " << double_var << endl;
-    cout << "char    " << char_var << endl;
-    cout << "bool    " << bool_var << endl;    
-}
+class App0205 {
+public:
+    static void run() {
+        cout << "short   " << short_var << endl;
+        cout << "int     " << int_var << endl;
+        cout << "long    " << long_var << endl;
+        cout << "float   " << float_var << endl;
+        cout << "double  " << double_var << endl;
+        cout << "char    " << char_var << endl;
+        cout << "bool    " << bool_var << endl;    
+    }
+};
 
 /*
 int main(int argc, char** argv) {
-    app0205();
+    App0205::run();
     return 0;
 }
 */

@@ -3,19 +3,22 @@
 
 using namespace std;
 
-void printLine() {
-    cout << "--------------------" << endl;
-}
-
-void app0701() {
-    for(int i = 1; i < 10; i++) {
-        printLine();
+class App0701 {
+public:
+    static void printLine() {
+        cout << "--------------------" << endl;
     }
-}
+
+    static void run() {
+        for(int i = 1; i < 10; i++) {
+            printLine();
+        }
+    }
+};
 
 /*
 int main(int argc, char** argv) {
-    app0701();
+    App0701::run();
     return 0;
 }
 */

@@ -3,41 +3,44 @@
 
 using namespace std;
 
-void app0302() {
-    int count = 10;
-    
-    cout << endl << "   Pre Increment    ";
-    cout << endl << "--------------------";
-    cout << endl << "Current Value : " << count;
-    cout << endl << "New Value     : " << ++count;
-    cout << endl << "Final Value   : " << count;
-    cout << endl;
-    
-    cout << endl << "   Post Increment   ";
-    cout << endl << "--------------------";
-    cout << endl << "Current Value : " << count;
-    cout << endl << "New Value     : " << count++;
-    cout << endl << "Final Value   : " << count;
-    cout << endl;
+class App0302 {
+public:
+    static void run() {
+        int count = 10;
 
-    cout << endl << "   Pre Decrement    ";
-    cout << endl << "--------------------";
-    cout << endl << "Current Value : " << count;
-    cout << endl << "New Value     : " << --count;
-    cout << endl << "Final Value   : " << count;
-    cout << endl;
+        cout << endl << "   Pre Increment    ";
+        cout << endl << "--------------------";
+        cout << endl << "Current Value : " << count;
+        cout << endl << "New Value     : " << ++count;
+        cout << endl << "Final Value   : " << count;
+        cout << endl;
 
-    cout << endl << "   Post Decrement   ";
-    cout << endl << "--------------------";
-    cout << endl << "Current Value : " << count;
-    cout << endl << "New Value     : " << count--;
-    cout << endl << "Final Value   : " << count;
-    cout << endl;
-}
+        cout << endl << "   Post Increment   ";
+        cout << endl << "--------------------";
+        cout << endl << "Current Value : " << count;
+        cout << endl << "New Value     : " << count++;
+        cout << endl << "Final Value   : " << count;
+        cout << endl;
+
+        cout << endl << "   Pre Decrement    ";
+        cout << endl << "--------------------";
+        cout << endl << "Current Value : " << count;
+        cout << endl << "New Value     : " << --count;
+        cout << endl << "Final Value   : " << count;
+        cout << endl;
+
+        cout << endl << "   Post Decrement   ";
+        cout << endl << "--------------------";
+        cout << endl << "Current Value : " << count;
+        cout << endl << "New Value     : " << count--;
+        cout << endl << "Final Value   : " << count;
+        cout << endl;
+    }
+};
 
 /*
 int main(int argc, char** argv) {
-    app0302();
+    App0302::run();
     return 0;
 }
 */

@@ -4,24 +4,27 @@
 
 using namespace std;
 
-void print(string message = "---------", int quantity = 1) {
-    for(int i = 0; i < quantity; i++) {
-        cout << message;
+class App0706 {
+public:
+    static void println(string message = "---------", int quantity = 1) {
+        for(int i = 0; i < quantity; i++) {
+            cout << message;
+        }
+        cout << endl;
     }
-    cout << endl;
-}
 
-void app0706() {
-    print("-");
-    for(int i = 1; i < 10; i++) {
-        print("-", i);
+    static void run() {
+        println("-");
+        for(int i = 1; i < 10; i++) {
+            println("-", i);
+        }
+        println("--------------------");
     }
-    print("--------------------");
-}
+};
 
 /*
 int main(int argc, char** argv) {
-    app0706();
+    App0706::run();
     return 0;
 }
 */

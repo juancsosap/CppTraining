@@ -3,13 +3,16 @@
 
 using namespace std;
 
-void app0104() {
-    cout << "Hello" << endl << "World" << endl;
-}
+class App0104 {
+public:
+    static void run() {
+        cout << "Hello" << endl << "World" << endl;
+    }
+};
 
 /*
 int main(int argc, char** argv) {
-    app0104();
+    App0104::run();
     return 0;
 }
 */
