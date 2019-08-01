@@ -41,6 +41,10 @@ public:
         cout << "--------------------------" << "text.assign" << endl;
         cout << text << endl;
 
+        text.erase(1, 4);
+        cout << "--------------------------" << "text.erase" << endl;
+        cout << text << endl;
+
         text.clear();
         cout << "--------------------------" << "text.clear" << endl;
         cout << text << endl;

@@ -33,6 +33,7 @@
         <itemPath>C02_Variables/E09_HeapMemoryManage.cpp</itemPath>
         <itemPath>C02_Variables/E10_Strings.cpp</itemPath>
         <itemPath>C02_Variables/E11_StringMethods.cpp</itemPath>
+        <itemPath>C02_Variables/E12_ReferanceVsValue.cpp</itemPath>
       </logicalFolder>
       <logicalFolder name="C03_Operators"
                      displayName="C03_Operators"
@@ -119,8 +120,82 @@
         <itemPath>C09_Objects/E13_FriendClass.cpp</itemPath>
         <itemPath>C09_Objects/E14_Inheritance.cpp</itemPath>
         <itemPath>C09_Objects/E15_InheritanceAccess.cpp</itemPath>
+        <itemPath>C09_Objects/E16_ChangingInheritanceAccess.cpp</itemPath>
+        <itemPath>C09_Objects/E17_MultipleInheritance.cpp</itemPath>
+        <itemPath>C09_Objects/E18_BaseConstructor.cpp</itemPath>
+        <itemPath>C09_Objects/E19_InheritanceHiding.cpp</itemPath>
+        <itemPath>C09_Objects/E20_IngeritanceOverriding.cpp</itemPath>
+        <itemPath>C09_Objects/E21_Polymorphism.cpp</itemPath>
+        <itemPath>C09_Objects/E22_PureVirtualFunctions.cpp</itemPath>
+        <itemPath>C09_Objects/E23_AbstractClasses.cpp</itemPath>
+        <itemPath>C09_Objects/E24_DiamondProblem.cpp</itemPath>
+        <itemPath>C09_Objects/E25_VirtualInheritance.cpp</itemPath>
+        <itemPath>C09_Objects/E26_NestedClassesBuilder.cpp</itemPath>
+        <itemPath>C09_Objects/E27_LocalFunctionsClasses.cpp</itemPath>
+        <itemPath>C09_Objects/E28_OperatorOverloading.cpp</itemPath>
+        <itemPath>C09_Objects/E29_ArraySubcriptionOperatorOverrinding.cpp</itemPath>
+        <itemPath>C09_Objects/E30_PointerOperatorOverriding.cpp</itemPath>
+        <itemPath>C09_Objects/E31_FunctionCallOperatorOverriding.cpp</itemPath>
+        <itemPath>C09_Objects/E32_NewAndDeleteOperatorOverriding.cpp</itemPath>
       </logicalFolder>
-      <itemPath>main.cpp</itemPath>
+      <logicalFolder name="C10_Exceptions"
+                     displayName="C10_Exceptions"
+                     projectFiles="true">
+        <itemPath>C10_Exceptions/E01_Exceptions.cpp</itemPath>
+        <itemPath>C10_Exceptions/E02_CatchExceptions.cpp</itemPath>
+        <itemPath>C10_Exceptions/E03_StringErrors.cpp</itemPath>
+        <itemPath>C10_Exceptions/E04_IntegerErrors.cpp</itemPath>
+        <itemPath>C10_Exceptions/E05_StdExceptions.cpp</itemPath>
+        <itemPath>C10_Exceptions/E06_MultipleCatchs.cpp</itemPath>
+        <itemPath>C10_Exceptions/E07_MethodThrowsException.cpp</itemPath>
+        <itemPath>C10_Exceptions/E08_ReThrowErrors.cpp</itemPath>
+        <itemPath>C10_Exceptions/E09_CustomExceptions.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="C11_Preprocessors"
+                     displayName="C11_Preprocessors"
+                     projectFiles="true">
+        <itemPath>C11_Preprocessors/E01_IncludePreProcesor.cpp</itemPath>
+        <itemPath>C11_Preprocessors/E01_IncludePreProcesorExternal.cpp</itemPath>
+        <itemPath>C11_Preprocessors/E02_DefinePreProcesor.cpp</itemPath>
+        <itemPath>C11_Preprocessors/E03_ConditionalCompilation.cpp</itemPath>
+        <itemPath>C11_Preprocessors/E04_PredefinedMacros.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="C12_Generics"
+                     displayName="C12_Generics"
+                     projectFiles="true">
+        <itemPath>C12_Generics/E01_GenericFunctions.cpp</itemPath>
+        <itemPath>C12_Generics/E02_GenericOverridingFunctions.cpp</itemPath>
+        <itemPath>C12_Generics/E03_GenericClass.cpp</itemPath>
+        <itemPath>C12_Generics/E04_DefaultGenericTypes.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="C13_Namespaces"
+                     displayName="C13_Namespaces"
+                     projectFiles="true">
+        <itemPath>C13_Namespaces/E01_Namespaces.cpp</itemPath>
+        <itemPath>C13_Namespaces/E02_External.cpp</itemPath>
+        <itemPath>C13_Namespaces/E02_ExternalNamespaces.cpp</itemPath>
+        <itemPath>C13_Namespaces/E03_NestedNamespaces.cpp</itemPath>
+        <itemPath>C13_Namespaces/E04_AnonymousNamespace.cpp</itemPath>
+        <itemPath>C13_Namespaces/E05_InlineNamespaces.cpp</itemPath>
+        <itemPath>C13_Namespaces/E06_Classes.cpp</itemPath>
+        <itemPath>C13_Namespaces/E06_Classes.h</itemPath>
+        <itemPath>C13_Namespaces/E06_ExternalClasses.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="C14_IOStreams"
+                     displayName="C14_IOStreams"
+                     projectFiles="true">
+        <itemPath>C14_IOStreams/E01_IOConsoleStreams.cpp</itemPath>
+        <itemPath>C14_IOStreams/E02_StreamOperatorsOverriding.cpp</itemPath>
+        <itemPath>C14_IOStreams/E03_FormatFlags.cpp</itemPath>
+        <itemPath>C14_IOStreams/E04_Manipulators.cpp</itemPath>
+        <itemPath>C14_IOStreams/E05_ExtendedManipulators.cpp</itemPath>
+        <itemPath>C14_IOStreams/E06_CustomManipulators.cpp</itemPath>
+        <itemPath>C14_IOStreams/E07_FileIOStream.cpp</itemPath>
+        <itemPath>C14_IOStreams/E08_FileMoveIOStream.cpp</itemPath>
+        <itemPath>C14_IOStreams/E09_BinaryFileIOStream.cpp</itemPath>
+        <itemPath>C14_IOStreams/E10_SerializationFileIOStream.cpp</itemPath>
+        <itemPath>C14_IOStreams/E11_StringStream.cpp</itemPath>
+      </logicalFolder>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -222,6 +297,11 @@
             tool="1"
             flavor2="0">
       </item>
+      <item path="C02_Variables/E12_ReferanceVsValue.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
       <item path="C03_Operators/E01_Arithmetics.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="C03_Operators/E02_IncDec.cpp" ex="false" tool="1" flavor2="0">
@@ -472,7 +552,244 @@
             tool="1"
             flavor2="0">
       </item>
-      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      <item path="C09_Objects/E16_ChangingInheritanceAccess.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E17_MultipleInheritance.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E18_BaseConstructor.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E19_InheritanceHiding.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E20_IngeritanceOverriding.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E21_Polymorphism.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C09_Objects/E22_PureVirtualFunctions.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E23_AbstractClasses.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E24_DiamondProblem.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C09_Objects/E25_VirtualInheritance.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E26_NestedClassesBuilder.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E27_LocalFunctionsClasses.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E28_OperatorOverloading.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E29_ArraySubcriptionOperatorOverrinding.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E30_PointerOperatorOverriding.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E31_FunctionCallOperatorOverriding.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E32_NewAndDeleteOperatorOverriding.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C10_Exceptions/E01_Exceptions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C10_Exceptions/E02_CatchExceptions.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C10_Exceptions/E03_StringErrors.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C10_Exceptions/E04_IntegerErrors.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C10_Exceptions/E05_StdExceptions.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C10_Exceptions/E06_MultipleCatchs.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C10_Exceptions/E07_MethodThrowsException.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C10_Exceptions/E08_ReThrowErrors.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C10_Exceptions/E09_CustomExceptions.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C11_Preprocessors/E01_IncludePreProcesor.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C11_Preprocessors/E01_IncludePreProcesorExternal.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C11_Preprocessors/E02_DefinePreProcesor.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C11_Preprocessors/E03_ConditionalCompilation.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C11_Preprocessors/E04_PredefinedMacros.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C12_Generics/E01_GenericFunctions.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C12_Generics/E02_GenericOverridingFunctions.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C12_Generics/E03_GenericClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C12_Generics/E04_DefaultGenericTypes.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C13_Namespaces/E01_Namespaces.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C13_Namespaces/E02_External.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C13_Namespaces/E02_ExternalNamespaces.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C13_Namespaces/E03_NestedNamespaces.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C13_Namespaces/E04_AnonymousNamespace.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C13_Namespaces/E05_InlineNamespaces.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C13_Namespaces/E06_Classes.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C13_Namespaces/E06_Classes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="C13_Namespaces/E06_ExternalClasses.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C14_IOStreams/E01_IOConsoleStreams.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C14_IOStreams/E02_StreamOperatorsOverriding.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C14_IOStreams/E03_FormatFlags.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C14_IOStreams/E04_Manipulators.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C14_IOStreams/E05_ExtendedManipulators.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C14_IOStreams/E06_CustomManipulators.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C14_IOStreams/E07_FileIOStream.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C14_IOStreams/E08_FileMoveIOStream.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C14_IOStreams/E09_BinaryFileIOStream.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C14_IOStreams/E10_SerializationFileIOStream.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C14_IOStreams/E11_StringStream.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -557,6 +874,11 @@
             tool="1"
             flavor2="0">
       </item>
+      <item path="C02_Variables/E12_ReferanceVsValue.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
       <item path="C03_Operators/E01_Arithmetics.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="C03_Operators/E02_IncDec.cpp" ex="false" tool="1" flavor2="0">
@@ -807,7 +1129,244 @@
             tool="1"
             flavor2="0">
       </item>
-      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      <item path="C09_Objects/E16_ChangingInheritanceAccess.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E17_MultipleInheritance.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E18_BaseConstructor.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E19_InheritanceHiding.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E20_IngeritanceOverriding.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E21_Polymorphism.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C09_Objects/E22_PureVirtualFunctions.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E23_AbstractClasses.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E24_DiamondProblem.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C09_Objects/E25_VirtualInheritance.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E26_NestedClassesBuilder.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E27_LocalFunctionsClasses.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E28_OperatorOverloading.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E29_ArraySubcriptionOperatorOverrinding.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E30_PointerOperatorOverriding.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E31_FunctionCallOperatorOverriding.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C09_Objects/E32_NewAndDeleteOperatorOverriding.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C10_Exceptions/E01_Exceptions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C10_Exceptions/E02_CatchExceptions.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C10_Exceptions/E03_StringErrors.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C10_Exceptions/E04_IntegerErrors.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C10_Exceptions/E05_StdExceptions.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C10_Exceptions/E06_MultipleCatchs.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C10_Exceptions/E07_MethodThrowsException.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C10_Exceptions/E08_ReThrowErrors.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C10_Exceptions/E09_CustomExceptions.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C11_Preprocessors/E01_IncludePreProcesor.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C11_Preprocessors/E01_IncludePreProcesorExternal.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C11_Preprocessors/E02_DefinePreProcesor.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C11_Preprocessors/E03_ConditionalCompilation.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C11_Preprocessors/E04_PredefinedMacros.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C12_Generics/E01_GenericFunctions.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C12_Generics/E02_GenericOverridingFunctions.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C12_Generics/E03_GenericClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C12_Generics/E04_DefaultGenericTypes.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C13_Namespaces/E01_Namespaces.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C13_Namespaces/E02_External.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C13_Namespaces/E02_ExternalNamespaces.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C13_Namespaces/E03_NestedNamespaces.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C13_Namespaces/E04_AnonymousNamespace.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C13_Namespaces/E05_InlineNamespaces.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C13_Namespaces/E06_Classes.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C13_Namespaces/E06_Classes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="C13_Namespaces/E06_ExternalClasses.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C14_IOStreams/E01_IOConsoleStreams.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C14_IOStreams/E02_StreamOperatorsOverriding.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C14_IOStreams/E03_FormatFlags.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C14_IOStreams/E04_Manipulators.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C14_IOStreams/E05_ExtendedManipulators.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C14_IOStreams/E06_CustomManipulators.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C14_IOStreams/E07_FileIOStream.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C14_IOStreams/E08_FileMoveIOStream.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C14_IOStreams/E09_BinaryFileIOStream.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C14_IOStreams/E10_SerializationFileIOStream.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C14_IOStreams/E11_StringStream.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>

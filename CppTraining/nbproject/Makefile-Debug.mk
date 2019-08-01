@@ -51,6 +51,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/C02_Variables/E09_HeapMemoryManage.o \
 	${OBJECTDIR}/C02_Variables/E10_Strings.o \
 	${OBJECTDIR}/C02_Variables/E11_StringMethods.o \
+	${OBJECTDIR}/C02_Variables/E12_ReferanceVsValue.o \
 	${OBJECTDIR}/C03_Operators/E01_Arithmetics.o \
 	${OBJECTDIR}/C03_Operators/E02_IncDec.o \
 	${OBJECTDIR}/C03_Operators/E03_ShortHand.o \
@@ -113,7 +114,60 @@ OBJECTFILES= \
 	${OBJECTDIR}/C09_Objects/E13_FriendClass.o \
 	${OBJECTDIR}/C09_Objects/E14_Inheritance.o \
 	${OBJECTDIR}/C09_Objects/E15_InheritanceAccess.o \
-	${OBJECTDIR}/main.o
+	${OBJECTDIR}/C09_Objects/E16_ChangingInheritanceAccess.o \
+	${OBJECTDIR}/C09_Objects/E17_MultipleInheritance.o \
+	${OBJECTDIR}/C09_Objects/E18_BaseConstructor.o \
+	${OBJECTDIR}/C09_Objects/E19_InheritanceHiding.o \
+	${OBJECTDIR}/C09_Objects/E20_IngeritanceOverriding.o \
+	${OBJECTDIR}/C09_Objects/E21_Polymorphism.o \
+	${OBJECTDIR}/C09_Objects/E22_PureVirtualFunctions.o \
+	${OBJECTDIR}/C09_Objects/E23_AbstractClasses.o \
+	${OBJECTDIR}/C09_Objects/E24_DiamondProblem.o \
+	${OBJECTDIR}/C09_Objects/E25_VirtualInheritance.o \
+	${OBJECTDIR}/C09_Objects/E26_NestedClassesBuilder.o \
+	${OBJECTDIR}/C09_Objects/E27_LocalFunctionsClasses.o \
+	${OBJECTDIR}/C09_Objects/E28_OperatorOverloading.o \
+	${OBJECTDIR}/C09_Objects/E29_ArraySubcriptionOperatorOverrinding.o \
+	${OBJECTDIR}/C09_Objects/E30_PointerOperatorOverriding.o \
+	${OBJECTDIR}/C09_Objects/E31_FunctionCallOperatorOverriding.o \
+	${OBJECTDIR}/C09_Objects/E32_NewAndDeleteOperatorOverriding.o \
+	${OBJECTDIR}/C10_Exceptions/E01_Exceptions.o \
+	${OBJECTDIR}/C10_Exceptions/E02_CatchExceptions.o \
+	${OBJECTDIR}/C10_Exceptions/E03_StringErrors.o \
+	${OBJECTDIR}/C10_Exceptions/E04_IntegerErrors.o \
+	${OBJECTDIR}/C10_Exceptions/E05_StdExceptions.o \
+	${OBJECTDIR}/C10_Exceptions/E06_MultipleCatchs.o \
+	${OBJECTDIR}/C10_Exceptions/E07_MethodThrowsException.o \
+	${OBJECTDIR}/C10_Exceptions/E08_ReThrowErrors.o \
+	${OBJECTDIR}/C10_Exceptions/E09_CustomExceptions.o \
+	${OBJECTDIR}/C11_Preprocessors/E01_IncludePreProcesor.o \
+	${OBJECTDIR}/C11_Preprocessors/E01_IncludePreProcesorExternal.o \
+	${OBJECTDIR}/C11_Preprocessors/E02_DefinePreProcesor.o \
+	${OBJECTDIR}/C11_Preprocessors/E03_ConditionalCompilation.o \
+	${OBJECTDIR}/C11_Preprocessors/E04_PredefinedMacros.o \
+	${OBJECTDIR}/C12_Generics/E01_GenericFunctions.o \
+	${OBJECTDIR}/C12_Generics/E02_GenericOverridingFunctions.o \
+	${OBJECTDIR}/C12_Generics/E03_GenericClass.o \
+	${OBJECTDIR}/C12_Generics/E04_DefaultGenericTypes.o \
+	${OBJECTDIR}/C13_Namespaces/E01_Namespaces.o \
+	${OBJECTDIR}/C13_Namespaces/E02_External.o \
+	${OBJECTDIR}/C13_Namespaces/E02_ExternalNamespaces.o \
+	${OBJECTDIR}/C13_Namespaces/E03_NestedNamespaces.o \
+	${OBJECTDIR}/C13_Namespaces/E04_AnonymousNamespace.o \
+	${OBJECTDIR}/C13_Namespaces/E05_InlineNamespaces.o \
+	${OBJECTDIR}/C13_Namespaces/E06_Classes.o \
+	${OBJECTDIR}/C13_Namespaces/E06_ExternalClasses.o \
+	${OBJECTDIR}/C14_IOStreams/E01_IOConsoleStreams.o \
+	${OBJECTDIR}/C14_IOStreams/E02_StreamOperatorsOverriding.o \
+	${OBJECTDIR}/C14_IOStreams/E03_FormatFlags.o \
+	${OBJECTDIR}/C14_IOStreams/E04_Manipulators.o \
+	${OBJECTDIR}/C14_IOStreams/E05_ExtendedManipulators.o \
+	${OBJECTDIR}/C14_IOStreams/E06_CustomManipulators.o \
+	${OBJECTDIR}/C14_IOStreams/E07_FileIOStream.o \
+	${OBJECTDIR}/C14_IOStreams/E08_FileMoveIOStream.o \
+	${OBJECTDIR}/C14_IOStreams/E09_BinaryFileIOStream.o \
+	${OBJECTDIR}/C14_IOStreams/E10_SerializationFileIOStream.o \
+	${OBJECTDIR}/C14_IOStreams/E11_StringStream.o
 
 
 # C Compiler Flags
@@ -219,6 +273,11 @@ ${OBJECTDIR}/C02_Variables/E11_StringMethods.o: C02_Variables/E11_StringMethods.
 	${MKDIR} -p ${OBJECTDIR}/C02_Variables
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C02_Variables/E11_StringMethods.o C02_Variables/E11_StringMethods.cpp
+
+${OBJECTDIR}/C02_Variables/E12_ReferanceVsValue.o: C02_Variables/E12_ReferanceVsValue.cpp
+	${MKDIR} -p ${OBJECTDIR}/C02_Variables
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C02_Variables/E12_ReferanceVsValue.o C02_Variables/E12_ReferanceVsValue.cpp
 
 ${OBJECTDIR}/C03_Operators/E01_Arithmetics.o: C03_Operators/E01_Arithmetics.cpp
 	${MKDIR} -p ${OBJECTDIR}/C03_Operators
@@ -530,10 +589,275 @@ ${OBJECTDIR}/C09_Objects/E15_InheritanceAccess.o: C09_Objects/E15_InheritanceAcc
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E15_InheritanceAccess.o C09_Objects/E15_InheritanceAccess.cpp
 
-${OBJECTDIR}/main.o: main.cpp
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/C09_Objects/E16_ChangingInheritanceAccess.o: C09_Objects/E16_ChangingInheritanceAccess.cpp
+	${MKDIR} -p ${OBJECTDIR}/C09_Objects
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E16_ChangingInheritanceAccess.o C09_Objects/E16_ChangingInheritanceAccess.cpp
+
+${OBJECTDIR}/C09_Objects/E17_MultipleInheritance.o: C09_Objects/E17_MultipleInheritance.cpp
+	${MKDIR} -p ${OBJECTDIR}/C09_Objects
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E17_MultipleInheritance.o C09_Objects/E17_MultipleInheritance.cpp
+
+${OBJECTDIR}/C09_Objects/E18_BaseConstructor.o: C09_Objects/E18_BaseConstructor.cpp
+	${MKDIR} -p ${OBJECTDIR}/C09_Objects
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E18_BaseConstructor.o C09_Objects/E18_BaseConstructor.cpp
+
+${OBJECTDIR}/C09_Objects/E19_InheritanceHiding.o: C09_Objects/E19_InheritanceHiding.cpp
+	${MKDIR} -p ${OBJECTDIR}/C09_Objects
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E19_InheritanceHiding.o C09_Objects/E19_InheritanceHiding.cpp
+
+${OBJECTDIR}/C09_Objects/E20_IngeritanceOverriding.o: C09_Objects/E20_IngeritanceOverriding.cpp
+	${MKDIR} -p ${OBJECTDIR}/C09_Objects
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E20_IngeritanceOverriding.o C09_Objects/E20_IngeritanceOverriding.cpp
+
+${OBJECTDIR}/C09_Objects/E21_Polymorphism.o: C09_Objects/E21_Polymorphism.cpp
+	${MKDIR} -p ${OBJECTDIR}/C09_Objects
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E21_Polymorphism.o C09_Objects/E21_Polymorphism.cpp
+
+${OBJECTDIR}/C09_Objects/E22_PureVirtualFunctions.o: C09_Objects/E22_PureVirtualFunctions.cpp
+	${MKDIR} -p ${OBJECTDIR}/C09_Objects
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E22_PureVirtualFunctions.o C09_Objects/E22_PureVirtualFunctions.cpp
+
+${OBJECTDIR}/C09_Objects/E23_AbstractClasses.o: C09_Objects/E23_AbstractClasses.cpp
+	${MKDIR} -p ${OBJECTDIR}/C09_Objects
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E23_AbstractClasses.o C09_Objects/E23_AbstractClasses.cpp
+
+${OBJECTDIR}/C09_Objects/E24_DiamondProblem.o: C09_Objects/E24_DiamondProblem.cpp
+	${MKDIR} -p ${OBJECTDIR}/C09_Objects
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E24_DiamondProblem.o C09_Objects/E24_DiamondProblem.cpp
+
+${OBJECTDIR}/C09_Objects/E25_VirtualInheritance.o: C09_Objects/E25_VirtualInheritance.cpp
+	${MKDIR} -p ${OBJECTDIR}/C09_Objects
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E25_VirtualInheritance.o C09_Objects/E25_VirtualInheritance.cpp
+
+${OBJECTDIR}/C09_Objects/E26_NestedClassesBuilder.o: C09_Objects/E26_NestedClassesBuilder.cpp
+	${MKDIR} -p ${OBJECTDIR}/C09_Objects
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E26_NestedClassesBuilder.o C09_Objects/E26_NestedClassesBuilder.cpp
+
+${OBJECTDIR}/C09_Objects/E27_LocalFunctionsClasses.o: C09_Objects/E27_LocalFunctionsClasses.cpp
+	${MKDIR} -p ${OBJECTDIR}/C09_Objects
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E27_LocalFunctionsClasses.o C09_Objects/E27_LocalFunctionsClasses.cpp
+
+${OBJECTDIR}/C09_Objects/E28_OperatorOverloading.o: C09_Objects/E28_OperatorOverloading.cpp
+	${MKDIR} -p ${OBJECTDIR}/C09_Objects
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E28_OperatorOverloading.o C09_Objects/E28_OperatorOverloading.cpp
+
+${OBJECTDIR}/C09_Objects/E29_ArraySubcriptionOperatorOverrinding.o: C09_Objects/E29_ArraySubcriptionOperatorOverrinding.cpp
+	${MKDIR} -p ${OBJECTDIR}/C09_Objects
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E29_ArraySubcriptionOperatorOverrinding.o C09_Objects/E29_ArraySubcriptionOperatorOverrinding.cpp
+
+${OBJECTDIR}/C09_Objects/E30_PointerOperatorOverriding.o: C09_Objects/E30_PointerOperatorOverriding.cpp
+	${MKDIR} -p ${OBJECTDIR}/C09_Objects
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E30_PointerOperatorOverriding.o C09_Objects/E30_PointerOperatorOverriding.cpp
+
+${OBJECTDIR}/C09_Objects/E31_FunctionCallOperatorOverriding.o: C09_Objects/E31_FunctionCallOperatorOverriding.cpp
+	${MKDIR} -p ${OBJECTDIR}/C09_Objects
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E31_FunctionCallOperatorOverriding.o C09_Objects/E31_FunctionCallOperatorOverriding.cpp
+
+${OBJECTDIR}/C09_Objects/E32_NewAndDeleteOperatorOverriding.o: C09_Objects/E32_NewAndDeleteOperatorOverriding.cpp
+	${MKDIR} -p ${OBJECTDIR}/C09_Objects
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C09_Objects/E32_NewAndDeleteOperatorOverriding.o C09_Objects/E32_NewAndDeleteOperatorOverriding.cpp
+
+${OBJECTDIR}/C10_Exceptions/E01_Exceptions.o: C10_Exceptions/E01_Exceptions.cpp
+	${MKDIR} -p ${OBJECTDIR}/C10_Exceptions
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C10_Exceptions/E01_Exceptions.o C10_Exceptions/E01_Exceptions.cpp
+
+${OBJECTDIR}/C10_Exceptions/E02_CatchExceptions.o: C10_Exceptions/E02_CatchExceptions.cpp
+	${MKDIR} -p ${OBJECTDIR}/C10_Exceptions
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C10_Exceptions/E02_CatchExceptions.o C10_Exceptions/E02_CatchExceptions.cpp
+
+${OBJECTDIR}/C10_Exceptions/E03_StringErrors.o: C10_Exceptions/E03_StringErrors.cpp
+	${MKDIR} -p ${OBJECTDIR}/C10_Exceptions
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C10_Exceptions/E03_StringErrors.o C10_Exceptions/E03_StringErrors.cpp
+
+${OBJECTDIR}/C10_Exceptions/E04_IntegerErrors.o: C10_Exceptions/E04_IntegerErrors.cpp
+	${MKDIR} -p ${OBJECTDIR}/C10_Exceptions
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C10_Exceptions/E04_IntegerErrors.o C10_Exceptions/E04_IntegerErrors.cpp
+
+${OBJECTDIR}/C10_Exceptions/E05_StdExceptions.o: C10_Exceptions/E05_StdExceptions.cpp
+	${MKDIR} -p ${OBJECTDIR}/C10_Exceptions
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C10_Exceptions/E05_StdExceptions.o C10_Exceptions/E05_StdExceptions.cpp
+
+${OBJECTDIR}/C10_Exceptions/E06_MultipleCatchs.o: C10_Exceptions/E06_MultipleCatchs.cpp
+	${MKDIR} -p ${OBJECTDIR}/C10_Exceptions
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C10_Exceptions/E06_MultipleCatchs.o C10_Exceptions/E06_MultipleCatchs.cpp
+
+${OBJECTDIR}/C10_Exceptions/E07_MethodThrowsException.o: C10_Exceptions/E07_MethodThrowsException.cpp
+	${MKDIR} -p ${OBJECTDIR}/C10_Exceptions
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C10_Exceptions/E07_MethodThrowsException.o C10_Exceptions/E07_MethodThrowsException.cpp
+
+${OBJECTDIR}/C10_Exceptions/E08_ReThrowErrors.o: C10_Exceptions/E08_ReThrowErrors.cpp
+	${MKDIR} -p ${OBJECTDIR}/C10_Exceptions
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C10_Exceptions/E08_ReThrowErrors.o C10_Exceptions/E08_ReThrowErrors.cpp
+
+${OBJECTDIR}/C10_Exceptions/E09_CustomExceptions.o: C10_Exceptions/E09_CustomExceptions.cpp
+	${MKDIR} -p ${OBJECTDIR}/C10_Exceptions
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C10_Exceptions/E09_CustomExceptions.o C10_Exceptions/E09_CustomExceptions.cpp
+
+${OBJECTDIR}/C11_Preprocessors/E01_IncludePreProcesor.o: C11_Preprocessors/E01_IncludePreProcesor.cpp
+	${MKDIR} -p ${OBJECTDIR}/C11_Preprocessors
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C11_Preprocessors/E01_IncludePreProcesor.o C11_Preprocessors/E01_IncludePreProcesor.cpp
+
+${OBJECTDIR}/C11_Preprocessors/E01_IncludePreProcesorExternal.o: C11_Preprocessors/E01_IncludePreProcesorExternal.cpp
+	${MKDIR} -p ${OBJECTDIR}/C11_Preprocessors
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C11_Preprocessors/E01_IncludePreProcesorExternal.o C11_Preprocessors/E01_IncludePreProcesorExternal.cpp
+
+${OBJECTDIR}/C11_Preprocessors/E02_DefinePreProcesor.o: C11_Preprocessors/E02_DefinePreProcesor.cpp
+	${MKDIR} -p ${OBJECTDIR}/C11_Preprocessors
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C11_Preprocessors/E02_DefinePreProcesor.o C11_Preprocessors/E02_DefinePreProcesor.cpp
+
+${OBJECTDIR}/C11_Preprocessors/E03_ConditionalCompilation.o: C11_Preprocessors/E03_ConditionalCompilation.cpp
+	${MKDIR} -p ${OBJECTDIR}/C11_Preprocessors
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C11_Preprocessors/E03_ConditionalCompilation.o C11_Preprocessors/E03_ConditionalCompilation.cpp
+
+${OBJECTDIR}/C11_Preprocessors/E04_PredefinedMacros.o: C11_Preprocessors/E04_PredefinedMacros.cpp
+	${MKDIR} -p ${OBJECTDIR}/C11_Preprocessors
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C11_Preprocessors/E04_PredefinedMacros.o C11_Preprocessors/E04_PredefinedMacros.cpp
+
+${OBJECTDIR}/C12_Generics/E01_GenericFunctions.o: C12_Generics/E01_GenericFunctions.cpp
+	${MKDIR} -p ${OBJECTDIR}/C12_Generics
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C12_Generics/E01_GenericFunctions.o C12_Generics/E01_GenericFunctions.cpp
+
+${OBJECTDIR}/C12_Generics/E02_GenericOverridingFunctions.o: C12_Generics/E02_GenericOverridingFunctions.cpp
+	${MKDIR} -p ${OBJECTDIR}/C12_Generics
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C12_Generics/E02_GenericOverridingFunctions.o C12_Generics/E02_GenericOverridingFunctions.cpp
+
+${OBJECTDIR}/C12_Generics/E03_GenericClass.o: C12_Generics/E03_GenericClass.cpp
+	${MKDIR} -p ${OBJECTDIR}/C12_Generics
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C12_Generics/E03_GenericClass.o C12_Generics/E03_GenericClass.cpp
+
+${OBJECTDIR}/C12_Generics/E04_DefaultGenericTypes.o: C12_Generics/E04_DefaultGenericTypes.cpp
+	${MKDIR} -p ${OBJECTDIR}/C12_Generics
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C12_Generics/E04_DefaultGenericTypes.o C12_Generics/E04_DefaultGenericTypes.cpp
+
+${OBJECTDIR}/C13_Namespaces/E01_Namespaces.o: C13_Namespaces/E01_Namespaces.cpp
+	${MKDIR} -p ${OBJECTDIR}/C13_Namespaces
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C13_Namespaces/E01_Namespaces.o C13_Namespaces/E01_Namespaces.cpp
+
+${OBJECTDIR}/C13_Namespaces/E02_External.o: C13_Namespaces/E02_External.cpp
+	${MKDIR} -p ${OBJECTDIR}/C13_Namespaces
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C13_Namespaces/E02_External.o C13_Namespaces/E02_External.cpp
+
+${OBJECTDIR}/C13_Namespaces/E02_ExternalNamespaces.o: C13_Namespaces/E02_ExternalNamespaces.cpp
+	${MKDIR} -p ${OBJECTDIR}/C13_Namespaces
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C13_Namespaces/E02_ExternalNamespaces.o C13_Namespaces/E02_ExternalNamespaces.cpp
+
+${OBJECTDIR}/C13_Namespaces/E03_NestedNamespaces.o: C13_Namespaces/E03_NestedNamespaces.cpp
+	${MKDIR} -p ${OBJECTDIR}/C13_Namespaces
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C13_Namespaces/E03_NestedNamespaces.o C13_Namespaces/E03_NestedNamespaces.cpp
+
+${OBJECTDIR}/C13_Namespaces/E04_AnonymousNamespace.o: C13_Namespaces/E04_AnonymousNamespace.cpp
+	${MKDIR} -p ${OBJECTDIR}/C13_Namespaces
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C13_Namespaces/E04_AnonymousNamespace.o C13_Namespaces/E04_AnonymousNamespace.cpp
+
+${OBJECTDIR}/C13_Namespaces/E05_InlineNamespaces.o: C13_Namespaces/E05_InlineNamespaces.cpp
+	${MKDIR} -p ${OBJECTDIR}/C13_Namespaces
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C13_Namespaces/E05_InlineNamespaces.o C13_Namespaces/E05_InlineNamespaces.cpp
+
+${OBJECTDIR}/C13_Namespaces/E06_Classes.o: C13_Namespaces/E06_Classes.cpp
+	${MKDIR} -p ${OBJECTDIR}/C13_Namespaces
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C13_Namespaces/E06_Classes.o C13_Namespaces/E06_Classes.cpp
+
+${OBJECTDIR}/C13_Namespaces/E06_ExternalClasses.o: C13_Namespaces/E06_ExternalClasses.cpp
+	${MKDIR} -p ${OBJECTDIR}/C13_Namespaces
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C13_Namespaces/E06_ExternalClasses.o C13_Namespaces/E06_ExternalClasses.cpp
+
+${OBJECTDIR}/C14_IOStreams/E01_IOConsoleStreams.o: C14_IOStreams/E01_IOConsoleStreams.cpp
+	${MKDIR} -p ${OBJECTDIR}/C14_IOStreams
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C14_IOStreams/E01_IOConsoleStreams.o C14_IOStreams/E01_IOConsoleStreams.cpp
+
+${OBJECTDIR}/C14_IOStreams/E02_StreamOperatorsOverriding.o: C14_IOStreams/E02_StreamOperatorsOverriding.cpp
+	${MKDIR} -p ${OBJECTDIR}/C14_IOStreams
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C14_IOStreams/E02_StreamOperatorsOverriding.o C14_IOStreams/E02_StreamOperatorsOverriding.cpp
+
+${OBJECTDIR}/C14_IOStreams/E03_FormatFlags.o: C14_IOStreams/E03_FormatFlags.cpp
+	${MKDIR} -p ${OBJECTDIR}/C14_IOStreams
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C14_IOStreams/E03_FormatFlags.o C14_IOStreams/E03_FormatFlags.cpp
+
+${OBJECTDIR}/C14_IOStreams/E04_Manipulators.o: C14_IOStreams/E04_Manipulators.cpp
+	${MKDIR} -p ${OBJECTDIR}/C14_IOStreams
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C14_IOStreams/E04_Manipulators.o C14_IOStreams/E04_Manipulators.cpp
+
+${OBJECTDIR}/C14_IOStreams/E05_ExtendedManipulators.o: C14_IOStreams/E05_ExtendedManipulators.cpp
+	${MKDIR} -p ${OBJECTDIR}/C14_IOStreams
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C14_IOStreams/E05_ExtendedManipulators.o C14_IOStreams/E05_ExtendedManipulators.cpp
+
+${OBJECTDIR}/C14_IOStreams/E06_CustomManipulators.o: C14_IOStreams/E06_CustomManipulators.cpp
+	${MKDIR} -p ${OBJECTDIR}/C14_IOStreams
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C14_IOStreams/E06_CustomManipulators.o C14_IOStreams/E06_CustomManipulators.cpp
+
+${OBJECTDIR}/C14_IOStreams/E07_FileIOStream.o: C14_IOStreams/E07_FileIOStream.cpp
+	${MKDIR} -p ${OBJECTDIR}/C14_IOStreams
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C14_IOStreams/E07_FileIOStream.o C14_IOStreams/E07_FileIOStream.cpp
+
+${OBJECTDIR}/C14_IOStreams/E08_FileMoveIOStream.o: C14_IOStreams/E08_FileMoveIOStream.cpp
+	${MKDIR} -p ${OBJECTDIR}/C14_IOStreams
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C14_IOStreams/E08_FileMoveIOStream.o C14_IOStreams/E08_FileMoveIOStream.cpp
+
+${OBJECTDIR}/C14_IOStreams/E09_BinaryFileIOStream.o: C14_IOStreams/E09_BinaryFileIOStream.cpp
+	${MKDIR} -p ${OBJECTDIR}/C14_IOStreams
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C14_IOStreams/E09_BinaryFileIOStream.o C14_IOStreams/E09_BinaryFileIOStream.cpp
+
+${OBJECTDIR}/C14_IOStreams/E10_SerializationFileIOStream.o: C14_IOStreams/E10_SerializationFileIOStream.cpp
+	${MKDIR} -p ${OBJECTDIR}/C14_IOStreams
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C14_IOStreams/E10_SerializationFileIOStream.o C14_IOStreams/E10_SerializationFileIOStream.cpp
+
+${OBJECTDIR}/C14_IOStreams/E11_StringStream.o: C14_IOStreams/E11_StringStream.cpp
+	${MKDIR} -p ${OBJECTDIR}/C14_IOStreams
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/C14_IOStreams/E11_StringStream.o C14_IOStreams/E11_StringStream.cpp
 
 # Subprojects
 .build-subprojects:

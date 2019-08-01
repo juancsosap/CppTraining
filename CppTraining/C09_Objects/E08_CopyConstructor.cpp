@@ -37,11 +37,18 @@ public:
             setDate(date);
         }
 
-        // Copy Constructor
+        // Clone Constructor
         Task(Task *task) {
             setDescription(task->getDescription());
             setCategory(task->getCategory());
             setDate(task->getDate());
+        }
+        
+        // Copy Constructor
+        Task(Task &task) {
+            setDescription(task.getDescription());
+            setCategory(task.getCategory());
+            setDate(task.getDate());
         }
     };
 
@@ -70,6 +77,33 @@ public:
         Task *task6 = new Task(task4);
         task6->display();
         cout << "Address : " << task6 << endl << endl;
+        
+        Task task7("Meeting", "Work", "23/05/2019");
+        task7.display();
+        cout << "Address : " << &task7 << endl << endl;
+
+        Task task8(&task7);
+        task8.display();
+        cout << "Address : " << &task8 << endl << endl;
+
+        Task task9 = task7;
+        task9.display();
+        cout << "Address : " << &task9 << endl << endl;
+        
+        cout << endl << "###############################" << endl << endl;
+        
+        task4->setCategory("Personal");
+        task4->display();
+        task5->display();
+        task6->display();
+                
+        cout << endl << "###############################" << endl << endl;
+        
+        task7.setCategory("Professional");
+        task7.display();
+        task8.display();
+        task9.display();
+        
     }
 };
 

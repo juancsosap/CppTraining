@@ -9,14 +9,21 @@
             <url>C05_LoopBlocks/E03_InfiniteLoop.cpp</url>
             <bookmark id="1">
                 <name/>
-                <line>6</line>
+                <line>5</line>
                 <key/>
             </bookmark>
         </file>
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/admin/repo/cpp/CppTraining/C09_Objects/E01_ClassDefinition.cpp</file>
+            <file>file:/home/admin/repo/cpp/CppTraining/C13_Namespaces/E02_ExternalNamespaces.cpp</file>
+            <file>file:/home/admin/repo/cpp/CppTraining/C13_Namespaces/E01_Namespaces.cpp</file>
+            <file>file:/home/admin/repo/cpp/CppTraining/C13_Namespaces/E06_ExternalClasses.cpp</file>
+            <file>file:/home/admin/repo/cpp/CppTraining/C13_Namespaces/E06_Classes.cpp</file>
+            <file>file:/home/admin/repo/cpp/CppTraining/C13_Namespaces/E05_InlineNamespaces.cpp</file>
+            <file>file:/home/admin/repo/cpp/CppTraining/C13_Namespaces/E04_AnonymousNamespace.cpp</file>
+            <file>file:/home/admin/repo/cpp/CppTraining/C13_Namespaces/E03_NestedNamespaces.cpp</file>
+            <file>file:/home/admin/repo/cpp/CppTraining/C13_Namespaces/E06_Classes.h</file>
         </group>
     </open-files>
 </project-private>
